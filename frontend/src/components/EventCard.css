@@ -1,0 +1,110 @@
+.event-card-link {
+  text-decoration: none;
+  display: block;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.colorful-event-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.colorful-event-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+}
+
+.card-category {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.card-price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #667eea;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.card-location,
+.card-date {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.card-seats {
+  margin-top: 15px;
+}
+
+.seats-bar {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.seats-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.seats-text {
+  font-size: 12px;
+  color: #999;
+}
